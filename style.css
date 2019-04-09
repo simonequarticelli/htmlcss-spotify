@@ -1,0 +1,35 @@
+aside{
+  border: 1px solid red;
+  height: 100vh;
+  background-color: black;
+  color:white;
+  display: flex;
+  width: 17%;
+}
+.menu{
+  flex-direction: column;
+  width: 100%;
+  margin:0px 20px;
+}
+.menu a{
+  display: block;
+  padding:20px;
+}
+.btn{
+  padding:10px 15px;
+  margin:10px 0px;
+}
+.link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link a{
+  display: inline-block;
+  padding:0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.link a:last-child{
+  border-left: 1px solid white;
+}
