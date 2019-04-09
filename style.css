@@ -1,10 +1,10 @@
 aside{
-  border: 1px solid red;
   height: 100vh;
   background-color: black;
   color:white;
   display: flex;
   width: 17%;
+  position: fixed;
 }
 .menu{
   flex-direction: column;
@@ -33,3 +33,31 @@ aside{
 .link a:last-child{
   border-left: 1px solid white;
 }
+nav{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  margin-left: 17%;
+  padding: 20px;
+}
+nav ul li{
+  display: inline-block;
+  text-decoration: none;
+  padding-right:10px;
+}
+ul{
+  padding:0;
+  margin:0;
+}
+main{
+  display: flex;
+  margin-left: 17%;
+  border:1px solid red;
+  padding-left: 20px;
+  height: 100vh;
+}
+/* .album{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+} */
