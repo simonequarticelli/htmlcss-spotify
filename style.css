@@ -1,5 +1,5 @@
 body{
-  background-color: rgba(0,0,0,.8);
+  background-image: linear-gradient(#006266, black);
 }
 aside{
   height: 100vh;
@@ -18,13 +18,24 @@ aside svg{
 }
 .menu{
   flex-direction: column;
-  width: 100%;
-  margin:0px 20px;
+  width: 80%;
+  margin:0 auto;
 }
 .menu a{
   display: block;
   padding:20px 20px 0px 0px;
   color:white;
+}
+.btn-group-vertical>.btn:first-child:not(:last-child),
+.btn-group-vertical>.btn:last-child:not(:first-child){
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.btn-default:last-child{
+  color: white;
+  background-color: black;
 }
 .btn{
   padding:10px 15px;
@@ -53,11 +64,21 @@ nav{
   justify-content: center;
   margin-left: 17%;
   padding: 20px;
+  padding-top:30px;
+  font-size: 15px;
 }
 nav ul li{
   display: inline-block;
   text-decoration: none;
-  padding-right:10px;
+  padding-right:20px;
+}
+nav a{
+  color:#b3b3b3;
+}
+
+nav a:hover{
+  color:white;
+  text-decoration: none;
 }
 ul{
   padding:0;
@@ -67,13 +88,19 @@ main,
 section{
   display: flex;
   margin-left: 17%;
-  padding-left: 20px;
+  padding-left: 70px;
   flex-wrap: wrap;
+}
+section{
+  margin-bottom: 180px;
 }
 .titolo{
   margin-left: 17%;
-  padding-left: 20px;
+  padding-left: 70px;
   color:white;
+}
+h2{
+  font-weight: bold;
 }
 .album{
   display: flex;
@@ -91,5 +118,22 @@ section{
   height: 90%;
 }
 .album h6{
+  color:white;
+}
+.lettore_musicale{
+  position: fixed;
+  background-color: #282828;
+  height: 100px;
+  text-align: center;
+  z-index: 1;
+  bottom:0;
+  left:0;
+  width: 100vw;
+}
+.lettore_musicale i{
+  line-height: 100px;
+  padding: 0px 10px;
+}
+.far{
   color:white;
 }
