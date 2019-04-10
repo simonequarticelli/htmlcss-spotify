@@ -1,3 +1,6 @@
+body{
+  background-color: rgba(0,0,0,.8);
+}
 aside{
   height: 100vh;
   background-color: black;
@@ -6,6 +9,13 @@ aside{
   width: 17%;
   position: fixed;
 }
+aside .logo{
+  color:white;
+  height: 40px;
+}
+aside svg{
+  margin-right: 15px;
+}
 .menu{
   flex-direction: column;
   width: 100%;
@@ -13,11 +23,14 @@ aside{
 }
 .menu a{
   display: block;
-  padding:20px;
+  padding:20px 20px 0px 0px;
+  color:white;
 }
 .btn{
   padding:10px 15px;
   margin:10px 0px;
+  margin-top: 50px;
+  border-radius: 10px;
 }
 .link{
   display: flex;
@@ -29,6 +42,7 @@ aside{
   padding:0;
   padding-right: 10px;
   padding-left: 10px;
+  margin-top: 10px;
 }
 .link a:last-child{
   border-left: 1px solid white;
@@ -49,15 +63,33 @@ ul{
   padding:0;
   margin:0;
 }
-main{
+main,
+section{
   display: flex;
   margin-left: 17%;
-  border:1px solid red;
   padding-left: 20px;
-  height: 100vh;
+  flex-wrap: wrap;
 }
-/* .album{
-  width: 150px;
-  height: 150px;
-  background-color: red;
-} */
+.titolo{
+  margin-left: 17%;
+  padding-left: 20px;
+  color:white;
+}
+.album{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.album img{
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+.album h6{
+  color:white;
+}
