@@ -25,6 +25,10 @@ aside svg{
   display: block;
   padding:20px 20px 0px 0px;
   color:white;
+  border:1px solid red;
+}
+.menu a:hover{
+  text-decoration: none;
 }
 .btn-group-vertical>.btn:first-child:not(:last-child),
 .btn-group-vertical>.btn:last-child:not(:first-child){
@@ -37,11 +41,18 @@ aside svg{
   color: white;
   background-color: black;
 }
+.btn-default:hover:first-child{
+  color: black;
+  background-color: white;
+}
 .btn{
   padding:10px 15px;
   margin:10px 0px;
   margin-top: 50px;
   border-radius: 10px;
+}
+.btn:hover{
+  transform: scale(1.1);
 }
 .link{
   display: flex;
