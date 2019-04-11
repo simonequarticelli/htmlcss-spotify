@@ -115,7 +115,7 @@ section{
   flex-wrap: wrap;
 }
 section{
-  margin-bottom: 180px;
+  margin-bottom: 280px;
 }
 .titolo{
   margin-left: 17%;
@@ -152,6 +152,35 @@ h2{
   bottom:0;
   left:0;
   width: 100vw;
+}
+.submit{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  bottom: 100px;
+  margin-bottom: 0;
+  width: 100vw;
+  color:white;
+  padding: 0px 50px;
+  background-image: -webkit-linear-gradient(left, #af2896, #509bf5);
+  background-image: -o-linear-gradient(left, #af2896, #509bf5);
+  background-image: linear-gradient(to right, #af2896, #509bf5);
+}
+.submit .left P{
+  font-size: 15px;
+}
+.submit button{
+  background-color: white;
+  color:#509bf5;
+  border: 0;
+  padding: 0px 50px;
+  border-radius: 20px;
+  height: 40px;
+}
+.submit button:hover{
+  transform: scale(1.1);
 }
 .lettore_musicale i{
   line-height: 100px;
